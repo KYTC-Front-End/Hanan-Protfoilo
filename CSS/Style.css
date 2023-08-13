@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryColor: #425c81;
+    --secondaryColor: #484a4b;
+    --lightColor: #fff;
+    --bgColor-1: #A5D4DE;
+    --bgColor-2:#F3F4F9;
+    --padding: 8%;
+
+}
+
+.btnn{
+    margin-top: 20px;
+}
+html{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 12px;
+   
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: var(--primaryColor);
+}
+h2{
+    font-size: 50%;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    color: white;
+    margin-left:5%;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+nav{
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #06BEB6;
+    width: 100%;
+    padding:1%;
+    z-index: 1; 
+
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+   
+
+}
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight:100px;
+    font-style: italic;
+    text-transform:capitalize;
+    transition: 0.4s; /*عشان اعمل انمشين بسيط*/
+    color: #fff;
+    
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+
+}
+ nav .ulNav .nav-item.active a{
+    font-weight: bold;
+    color: #273942;
+
+}
+
+.btn2{
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: 2px solid transparent;/* عشان م يتحرك معي كل الnav*/
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.71rem 1.70rem;
+    border-radius: 30px;
+
+
+}
+.btn3{
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: 2px solid transparent;/* عشان م يتحرك معي كل الnav*/
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.71rem 1.70rem;
+    border-radius: 30px;
+    /* padding-top: 5%; */
+    
+    
+
+}
+.btn2:hover{
+    background-color: transparent;  /*شفافية للعنصر*/
+    border: 2px solid var(--primaryColor);
+    transition: 0.4s;
+    color: #fff;
+    
+}
+.btn3:hover{
+    background-color: transparent;  /*شفافية للعنصر*/
+    border: 2px solid var(--primaryColor);
+    transition: 0.4s;
+    color: #fff;
+    
+}
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-text{
+    position: relative;
+    bottom: 40px;
+}
+h1{
+    font-size: 4.3rem;
+    margin: 1.7rem 0;
+    color: var(--lightColor);
+    color: #fff;
+}
+h3{
+    font-size:1,0rem ;
+    margin-bottom: 3.5rem;
+    color: white;
+    
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem  ;
+    color: var(--secondaryColor);
+    margin-top: 20%;
+}
+h5{
+    color: #06BEB6;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2px;
+    font-family:'Trebuchet MS';
+
+
+}
+.par{
+    color: rgb(11, 11, 10);
+    margin-top: 10%;
+    padding:20px;
+    
+}
+.socail{
+    margin-top: 3.5rem;
+}
+.socail img{
+    margin-right: 2rem;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+
+}
+.socail img:hover{
+      width: 45px; 
+      height: 45px;
+    
+}
+.container-image{
+    width: 40%;
+    height: 90%;
+    padding: 10%;
+    position: relative;
+    align-self: flex-end;
+    
+}
+.container-image img {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* عشان الصورة تيجيالي بالنص و عاليسار  */
+    transition: bottom 1s , left 1s;
+}
+.container-image:hover .shape {
+    bottom:45px;
+    
+}
+.container-image:hover .pic{
+    left: 40%;
+
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.div1{
+    width: 20%;
+    margin-left: 4%;
+    padding: 5%;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.div1:hover{
+    width: 25%;
+}
+.div2{
+    width: 50%;
+    margin-left: 4%;
+    padding: 5%;
+}
+
+.sec2{
+    background-color: var(--bgColor-2);
+    display: flex;
+    justify-content: center;
+    
+}
+.span2{
+    color: var(--primaryColor);
+    
+}
+.h11{
+    color: #273942;
+    margin-left: 60px;
+    margin-top: -2%;
+    font-weight: bold;
+    font-size: 2.5rem;
+    
+}
+.head{
+    margin-top: 20%;
+}
+.span3{
+    color: var(--primaryColor);
+}
+.p2{
+    color: #484a4b;
+    margin-left: 60px;
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2px;
+    font-family:'Trebuchet MS';
+}
+/* ---services--- */
+
+.services{
+    background-color: var(--bgColor-1);
+    padding: 5% var(--padding);
+}
+.span4{
+    color: var(--primaryColor);
+}
+.text-center{
+    text-align: center;
+   
+}
+.box{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{
+    width: 300px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    margin-left: 5%;
+    text-align: center;
+}
+
+
+.card em{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primaryColor);
+    margin: 2rem;
+}
+/* ---skills--- */
+.Skills{
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding) ;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.contanier_images img {
+    width: 50%;
+    margin-top: 20%;
+    margin-right: 10%;
+}
+.h{
+    margin-top: 20%;
+    color: #484a4b;
+    text-align: center;
+    margin-left: 150%;
+}
+.skill .contanier_skills{
+    width: 70%;
+    
+}
+.content-skills{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.skill{
+    width: 100px;
+    height: 100px;
+    background-color: var(--lightColor);
+    border-radius: 50%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill img{
+    width: 70%;
+}
+/* ---footer--- */
+footer{
+    background-color: var(--bgColor-1);
+    color: #273942;
+    padding: 70px;
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    
+}
+.f1{
+    width: 15%;
+    margin-left: 4%;
+}
+.fa-phone{
+    margin-right: 5px;
+    margin-top: 3%;
+    
+}
+.ff{
+width: 40%;
+}
+ul li{
+    list-style: none;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.ee{
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10%;
+}
